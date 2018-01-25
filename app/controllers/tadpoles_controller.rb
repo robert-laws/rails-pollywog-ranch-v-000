@@ -3,9 +3,9 @@ class TadpolesController < ApplicationController
 
   # add your metamorphosize action here
   def metamorphosize
-    
+    @tadpole = Tadpole.find(params[:id])
   end
-  
+
   def index
     @tadpoles = Tadpole.all
   end
